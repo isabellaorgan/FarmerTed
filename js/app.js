@@ -11,7 +11,7 @@ unicornArr.push(new Unicorn("Liz Taylor", "pasture"));
 
 for (var i = 0; i < unicornArr.length; i++) {
 
-var listEl = $($(this).attr("pasture"));
+$($(this).attr("pasture"));
 $("#pasture").append("<li>" + unicornArr[i].name + "</li>");
 
   $(function() {
