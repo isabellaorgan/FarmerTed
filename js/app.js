@@ -5,22 +5,22 @@ function Unicorn (name, area) {
 
 var unicornArr = [];
 
-unicornArr.push(new Unicorn("Sparkle", "pasture"));
-unicornArr.push(new Unicorn("Glitter", "pasture"));
-unicornArr.push(new Unicorn("Liz Taylor", "pasture"));
+unicornArr.push(new Unicorn('Sparkle', 'pasture'));
+unicornArr.push(new Unicorn('Glitter', 'pasture'));
+unicornArr.push(new Unicorn('Liz Taylor', 'pasture'));
 
 for (var i = 0; i < unicornArr.length; i++) {
 
-$($(this).attr("pasture"));
-$("#pasture").append("<li>" + unicornArr[i].name + "</li>");
+  $($(this).attr('pasture'));
+  $('#pasture').append('<li>' + unicornArr[i].name + '</li>');
 
   $(function() {
-    $("#pasture").on("click", "li", function() {
-      $(this).appendTo("#corral");
-      });
+    $('#pasture').on('click', 'li', function() {
+      $(this).appendTo('#corral');
+    });
 
-    $("#corral").on("click", "li", function() {
-      $(this).appendTo("#pasture");
+    $('#corral').on('click', 'li', function() {
+      $(this).appendTo('#pasture');
     });
   });
 
