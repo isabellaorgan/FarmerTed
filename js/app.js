@@ -1,4 +1,4 @@
-function Unicorn (name, area) {
+function Unicorn(name, area) {
   this.name = name;
   this.area = area;
 }
@@ -14,7 +14,7 @@ for (var i = 0; i < unicornArr.length; i++) {
   $($(this).attr('pasture'));
   $('#pasture').append('<li>' + unicornArr[i].name + '</li>');
 
-  $(function() {
+  $(() => {
     $('#pasture').on('click', 'li', function() {
       $(this).appendTo('#corral');
     });
